@@ -91,7 +91,7 @@ function HeroData() {
                 <div className='mt-6 px-8'>
                     <dl className='mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gapy-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-4 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16'>
                         {features.map(feature => (
-                            <div className='relative pl-9'>
+                            <div key={feature.name} className='relative pl-9'>
                                 <dt>
                                     <feature.icon
 

@@ -22,7 +22,7 @@ function FileUploader() {
                             <RocketIcon className='h-10 w-10 animate-ping mb-10' />
                             <p>Drop the files here ...</p></>) : (<>
                                 <CircleArrowDown className='h-10 w-10 animate-bounce mb-10' />
-                                <p>Drag 'n' drop some files here, or click to select files</p></>)
+                                <p>Drag n drop some files here, or click to select files</p></>)
 
 
                     }
