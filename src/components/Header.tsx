@@ -19,7 +19,7 @@ function Header() {
                     </Button>
 
                     <Button asChild variant="outline" className=''>
-                        <Link href="/dashboard/documents">My Documents</Link>
+                        <Link href="/dashboard">My Documents</Link>
                     </Button>
 
                     <Button asChild variant="outline" className=''>

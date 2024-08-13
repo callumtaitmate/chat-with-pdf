@@ -8,6 +8,12 @@ const nextConfig = {
         hostname: "i.imgur.com",
         port: "",
       },
+      
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+        port: "",
+      },
     ],
   },
 };
