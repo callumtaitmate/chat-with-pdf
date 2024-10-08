@@ -2,14 +2,14 @@
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { askQuestion } from "@/actions/askQuestion";
-// import {ChatMessage} from "./ChatMessage";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { useUser } from "@clerk/nextjs";
 import { collection, orderBy, query } from "firebase/firestore";
 import { db } from "../../firebase";
 import { FormEvent, useEffect, useRef, useState, useTransition } from "react";
-import { Loader2Icon } from "lucide-react";
+import { Loader2Icon, VariableIcon } from "lucide-react";
 import ChatMessage from "./ChatMessage";
+import { useToast } from "./ui/use-toast";
 
 
 export type Message = {
@@ -26,6 +26,7 @@ function Chat({ id }: { id: string }) {
     const [messages, setMessages] = useState<Message[]>([]);
     const [isPending, startTransition] = useTransition();
     const bottomOfChatReference = useRef<HTMLDivElement>(null);
+    const { toast } = useToast();
 
 
 
@@ -65,7 +66,7 @@ function Chat({ id }: { id: string }) {
 
         setMessages(newMessages)
 
-    }, [snapshot])
+    }, [snapshot, messages])
 
 
     const handleSubmit = async (e: FormEvent) => {
@@ -90,8 +91,18 @@ function Chat({ id }: { id: string }) {
         startTransition(async () => {
             const { success, message } = await askQuestion(id, q);
 
+            console.log("Debug 1, ", success, message)
+
             if (!success) {
-                //return toast notification
+                toast({
+                    variant: "destructive",
+                    title: "Error",
+                    description: message,
+                })
+
+
+
+
                 setMessages((prev => prev.slice(0, prev.length - 1).concat([
                     {
                         role: "ai",

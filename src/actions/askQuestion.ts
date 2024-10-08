@@ -4,11 +4,10 @@ import { generateLangchainCompletion } from "@/lib/langchain";
 import { adminDb } from "../../firebaseAdmin";
 import { Message } from "@/components/Chat";
 
+const PRO_LIMIT = 20;
 const FREE_LIMIT = 3;
-const PR0_LIMIT = 100;
 
 export async function askQuestion(id: string, question: string) {
-  auth().protect();
 
   const { userId } = await auth();
 
@@ -24,7 +23,28 @@ export async function askQuestion(id: string, question: string) {
     (doc) => doc.data().role === "human"
   );
 
-  //limit free/pro usage
+  const userRef = await adminDb.collection("users").doc(userId!).get();
+  console.log("debug2 -", userRef.data());
+
+  if (!userRef.data()?.hasActiveMembership) {
+    console.log("debug3", userMessages.length, FREE_LIMIT);
+    if (userMessages.length >= FREE_LIMIT) {
+      return {
+        success: false,
+        message: `You'll need to upgrade to PRO to ask more than ${FREE_LIMIT} questions.`,
+      };
+    }
+  }
+
+  if (userRef.data()?.hasActiveMembership) {
+    console.log("debug4", userMessages.length, PRO_LIMIT);
+    if (userMessages.length >= PRO_LIMIT) {
+      return {
+        success: false,
+        message: `You've run out of questions. Please contact support.`,
+      };
+    }
+  }
 
   const userMessage: Message = {
     role: "human",
