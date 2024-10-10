@@ -8,6 +8,7 @@ export async function GenerateEmbeddings(docId: string) {
 
   await GenerateEmbeddingsInPineconeVectorStore(docId);
 
+  
   revalidatePath("/dashboard");
 
   return { completed: true };

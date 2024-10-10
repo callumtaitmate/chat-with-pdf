@@ -8,7 +8,6 @@ const PRO_LIMIT = 20;
 const FREE_LIMIT = 3;
 
 export async function askQuestion(id: string, question: string) {
-
   const { userId } = await auth();
 
   const chatRef = await adminDb
@@ -41,7 +40,7 @@ export async function askQuestion(id: string, question: string) {
     if (userMessages.length >= PRO_LIMIT) {
       return {
         success: false,
-        message: `You've run out of questions. Please contact support.`,
+        message: `You've run out of questions. Upgrade using the button in the top right of your screen.`,
       };
     }
   }

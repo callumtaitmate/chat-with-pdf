@@ -7,7 +7,7 @@ import { useUser } from "@clerk/nextjs";
 import { collection, orderBy, query } from "firebase/firestore";
 import { db } from "../../firebase";
 import { FormEvent, useEffect, useRef, useState, useTransition } from "react";
-import { Loader2Icon, VariableIcon } from "lucide-react";
+import { Loader2Icon } from "lucide-react";
 import ChatMessage from "./ChatMessage";
 import { useToast } from "./ui/use-toast";
 
@@ -66,7 +66,7 @@ function Chat({ id }: { id: string }) {
 
         setMessages(newMessages)
 
-    }, [snapshot, messages])
+    }, [snapshot])
 
 
     const handleSubmit = async (e: FormEvent) => {
@@ -160,7 +160,7 @@ function Chat({ id }: { id: string }) {
                 <Button
                     disabled={!input || isPending}
                 >
-                    Ask</Button>
+                    {isPending ? (<Loader2Icon className="animate-spin text-indigo-600" />) : ("Ask")}</Button>
 
             </form>
 
