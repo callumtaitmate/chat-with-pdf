@@ -13,7 +13,6 @@ import { PineconeConflictError } from "@pinecone-database/pinecone/dist/errors";
 import { Index, RecordMetadata } from "@pinecone-database/pinecone";
 import { adminDb } from "../../firebaseAdmin";
 import { auth } from "@clerk/nextjs/server";
-import { split } from "postcss/lib/list";
 
 const model = new ChatOpenAI({
   apiKey: process.env.OPENAI_API_KEY,

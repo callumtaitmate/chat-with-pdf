@@ -26,6 +26,7 @@ export async function askQuestion(id: string, question: string) {
   console.log("debug2 -", userRef.data());
 
   if (!userRef.data()?.hasActiveMembership) {
+    console.log(userRef.data()?.hasActiveMembership)
     console.log("debug3", userMessages.length, FREE_LIMIT);
     if (userMessages.length >= FREE_LIMIT) {
       return {

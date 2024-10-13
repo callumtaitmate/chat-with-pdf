@@ -5,6 +5,7 @@ import React, { useCallback, useEffect } from 'react'
 import useUpload, { StatusText } from '@/hooks/useUpload';
 import { useDropzone } from 'react-dropzone'
 import { useRouter } from 'next/navigation';
+import { toast } from './ui/use-toast';
 
 
 
@@ -32,7 +33,7 @@ function FileUploader() {
             //do nothing
             //handle toast notification
         }
-    }, [handleUpload])
+    }, [handleUpload, toast])
 
 
     const statusIcons: { [key in StatusText]: JSX.Element;

@@ -1,11 +1,11 @@
-import { NextApiRequest } from "next";
+import { NextRequest } from "next/server";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import stripe from "@/lib/stripe";
 import { adminDb } from "../../../firebaseAdmin";
 
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
   const headersList = headers();
   const body = await req.text();
   const signature = headersList.get("stripe-signature");

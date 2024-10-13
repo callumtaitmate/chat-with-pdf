@@ -2,9 +2,9 @@
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { askQuestion } from "@/actions/askQuestion";
-import { useCollection } from "react-firebase-hooks/firestore";
+import { useCollection, useDocument } from "react-firebase-hooks/firestore";
 import { useUser } from "@clerk/nextjs";
-import { collection, orderBy, query } from "firebase/firestore";
+import { collection, orderBy, query, doc, addDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import { FormEvent, useEffect, useRef, useState, useTransition } from "react";
 import { Loader2Icon } from "lucide-react";
@@ -27,8 +27,6 @@ function Chat({ id }: { id: string }) {
     const [isPending, startTransition] = useTransition();
     const bottomOfChatReference = useRef<HTMLDivElement>(null);
     const { toast } = useToast();
-
-
 
 
 
@@ -70,7 +68,7 @@ function Chat({ id }: { id: string }) {
 
 
     const handleSubmit = async (e: FormEvent) => {
-        e.preventDefault;
+        e.preventDefault();
 
         const q = input;
         setInput("");
@@ -88,6 +86,8 @@ function Chat({ id }: { id: string }) {
                 createdAt: new Date()
             }
         ]);
+
+
         startTransition(async () => {
             const { success, message } = await askQuestion(id, q);
 
