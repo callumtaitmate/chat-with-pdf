@@ -49,12 +49,12 @@ function PricingPage() {
 
     return (
         <div>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-white py-16 sm:py-24">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
                     <p className="mt-2 text-4xl font-bold tracking-light text-gray-900 sm:text-5xl">Supercharge Your Document Companion</p>
                 </div>
-                <p className="mt-4 mx-auto max-w-2xl px-10 text-lg leading-8 text-gray-800 text-center">Choose an afforable plan that is packed with the best features for interacting with your PDFs, enhancing productivity, and streamlining your workflow.</p>
+                <p className="mt-4 mx-auto max-w-2xl px-10 text-lg leading-8 text-gray-800 text-center">Choose an afforable plan that is packed with the <span className="font-bold">best features</span> for interacting with your PDFs, <span className="font-bold text-indigo-600">enhancing productivity</span>, and streamlining your workflow.</p>
 
                 <div className="max-w-md mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 md:max-w-2xl gap-8 lg:max-w-4xl">
                     <div className="ring-1 ring-gray-200 p-8 h-fit pb-12 rounded-3xl">
@@ -72,7 +72,7 @@ function PricingPage() {
                         <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600">
                             <li className="flex gap-x-3">
                                 <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
-                                2 documents
+                                3 documents
 
                             </li>
                             <li className="flex gap-x-3">
@@ -133,17 +133,7 @@ function PricingPage() {
 
                             </li>
 
-                            <li className="flex gap-x-3">
-                                <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
-                                Advanced analytics
 
-                            </li>
-
-                            <li className="flex gap-x-3">
-                                <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
-                                24-hour support response time
-
-                            </li>
                         </ul>
                     </div>
 

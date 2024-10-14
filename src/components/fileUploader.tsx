@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircleIcon, CircleArrowDown, HammerIcon, RocketIcon, SaveIcon } from 'lucide-react'
+import { CheckCircleIcon, CircleArrowDown, HammerIcon, RocketIcon, SaveIcon, XIcon } from 'lucide-react'
 import React, { useCallback, useEffect } from 'react'
 import useUpload, { StatusText } from '@/hooks/useUpload';
 import { useDropzone } from 'react-dropzone'
@@ -12,7 +12,7 @@ import { toast } from './ui/use-toast';
 function FileUploader() {
 
 
-    const { progress, status, fileId, handleUpload } = useUpload();
+    const { progress, status, fileId, handleUpload, fileTooBig } = useUpload();
     const router = useRouter();
 
     useEffect(() => {
@@ -20,6 +20,8 @@ function FileUploader() {
             router.push(`/dashboard/files/${fileId}`)
         }
     }, [fileId, router])
+
+
 
 
     const onDrop = useCallback(async (acceptedFiles: File[]) => {
@@ -30,10 +32,10 @@ function FileUploader() {
 
 
         } else {
-            //do nothing
-            //handle toast notification
+
+
         }
-    }, [handleUpload, toast])
+    }, [handleUpload, toast, fileTooBig])
 
 
     const statusIcons: { [key in StatusText]: JSX.Element;
@@ -52,6 +54,9 @@ function FileUploader() {
 
         [StatusText.GENERATING]: (
             <HammerIcon className='h-20 w-20 text-indigo-600' />
+        ),
+        [StatusText.ERROR]: (
+            <XIcon className='h-20 w-20 text-indigo-600' />
         )
 
     }
@@ -66,6 +71,7 @@ function FileUploader() {
     })
 
     const uploadInProgress = progress != null && progress >= 0 && progress <= 100;
+
 
     return (
         <div className='flex flex-col gap-4 items-center max-w-7xl mx-auto'>
@@ -103,7 +109,7 @@ function FileUploader() {
                                 <RocketIcon className='h-10 w-10 animate-ping mb-10' />
                                 <p>Drop the files here ...</p></>) : (<>
                                     <CircleArrowDown className='h-10 w-10 animate-bounce mb-10' />
-                                    <p>Drag n drop some files here, or click to select files</p></>)
+                                    <p>Drag and drop some files here, or click to select files.</p></>)
 
 
                         }

@@ -156,7 +156,8 @@ function Chat({ id }: { id: string }) {
                 <Input
                     placeholder="Ask a question..."
                     value={input}
-                    onChange={(e) => setInput(e.target.value)} />
+                    onChange={(e) => setInput(e.target.value)}
+                    maxLength={150} />
                 <Button
                     disabled={!input || isPending}
                 >

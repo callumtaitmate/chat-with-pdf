@@ -8,8 +8,10 @@ function Header() {
     return (
         <div className='flex justify-between bg-white shadow-sm p-5 border-b'>
             <Link href="/dashboard"
-                className='text-2xl'>
-                Chat to <span className='text-indigo-600'>PDF</span>
+                className='text-2xl flex flex-col'>
+                <div>GetDocument<span className='text-indigo-600'>.info</span></div>
+
+                <span className='text-sm text-indigo-600'>Chat With PDF</span>
             </Link>
 
             <SignedIn>

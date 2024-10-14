@@ -8,7 +8,6 @@ function PlaceholderDocument() {
     const { isOverFileLimit } = useSubscription();
 
     const handleClick = () => {
-        //check if user is pro/free + if over file limit && push to file limit//
         router.push('/dashboard/upload')
 
     }
