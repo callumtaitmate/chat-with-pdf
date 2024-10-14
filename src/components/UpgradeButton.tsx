@@ -2,7 +2,7 @@
 import useSubscription from "@/hooks/useSubscription";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Loader2Icon, Star, StarIcon } from "lucide-react";
+import { Loader2Icon, StarIcon } from "lucide-react";
 import { createStripePortal } from "@/actions/createStripePortal";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";

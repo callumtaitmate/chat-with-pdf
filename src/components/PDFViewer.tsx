@@ -91,7 +91,7 @@ function PDFViewer({ url }: { url: string }) {
                     file={file}
                     rotate={rotation}
                     onLoadSuccess={onDocumentLoadSuccess}
-                    className="m-4 overflow-scroll">
+                    className="m-4 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-slate-300 overflow-y-scroll">
                     <Page
                         className="shadow-lg"
                         scale={scale}

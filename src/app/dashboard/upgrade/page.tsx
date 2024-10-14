@@ -54,7 +54,7 @@ function PricingPage() {
                     <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
                     <p className="mt-2 text-4xl font-bold tracking-light text-gray-900 sm:text-5xl">Supercharge Your Document Companion</p>
                 </div>
-                <p className="mt-4 mx-auto max-w-2xl px-10 text-lg leading-8 text-gray-800 text-center">Choose and afforable plans that is packed with the best features for interacting with your PDFs, enhancing productivity, and streamlining your workflow.</p>
+                <p className="mt-4 mx-auto max-w-2xl px-10 text-lg leading-8 text-gray-800 text-center">Choose an afforable plan that is packed with the best features for interacting with your PDFs, enhancing productivity, and streamlining your workflow.</p>
 
                 <div className="max-w-md mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 md:max-w-2xl gap-8 lg:max-w-4xl">
                     <div className="ring-1 ring-gray-200 p-8 h-fit pb-12 rounded-3xl">
