@@ -29,7 +29,7 @@ async function ChatToFilePage({
             <div className="col-span-5 lg:col-span-2 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-scroll">
                 <Chat id={id} />
             </div>
-            <div className="col-span5 lg:col-span-3 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-scroll bg-gray-100 border-r-2 lg:border-indigo-600 lg:-order-1 ">
+            <div className="col-span-5 lg:col-span-3 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-scroll bg-gray-100 border-r-2 lg:border-indigo-600 lg:-order-1 ">
                 <PDFViewer url={url} />
             </div>
         </div>

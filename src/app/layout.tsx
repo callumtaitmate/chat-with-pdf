@@ -6,8 +6,8 @@ import { Analytics } from "@vercel/analytics/react"
 
 
 export const metadata: Metadata = {
-  title: "GetDocument.info",
-  description: "AI Chat With PDF App",
+  title: "ResearchXcelerator",
+  description: "Upload and distil information from company reports.",
 };
 
 export default function RootLayout({
