@@ -25,7 +25,7 @@ async function ChatToFilePage({
 
 
     return (
-        <div className="grid lg:grid-cols-5 h-full ">
+        <div className="h-[calc(100vh-74px)] grid lg:grid-cols-5 overflow-auto">
             <div className="col-span-5 lg:col-span-2 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-scroll">
                 <Chat id={id} />
             </div>

@@ -22,10 +22,6 @@ function Header() {
                     <div className="flex items-center space-x-2">
                         <div className="w-6 h-6 bg-indigo-600 rounded"></div>
                         <span className="font-bold text-xl font-mono">ResearchXcelerator</span>
-                        <nav className="text-right">
-                            <h3>gpt-3.5-turbo</h3>
-                        </nav>
-
                     </div>
                 </Link>
 
