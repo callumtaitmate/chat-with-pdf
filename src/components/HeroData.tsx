@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react"
 import Link from 'next/link';
 import features from "@/components/ui/features";
 import TopBar from "./contact";
+import UploadButton from "./UploadButton";
 
 export default function Component() {
 
@@ -33,13 +34,13 @@ export default function Component() {
                     </div>
                 </Link>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    Transform Company Annual Reports into <br /> Interactive Conversations
+                    Transform Annual Company Reports into <br /> Interactive Conversations
                 </h1>
                 <p className="text-muted-foreground text-gray-600 mb-8">
                     This Bot turns static reports into <span className="font-semibold text-indigo-500">dynamic conversations</span>, enhancing market research productivity 10x effortlessly.
                 </p>
                 <div className="flex justify-center space-x-4">
-                    <Button variant="default" className="bg-indigo-600 hover:bg-indigo-700"> <Link href='/dashboard'>Upload PDF</Link></Button>
+                    <UploadButton />
 
                 </div>
 

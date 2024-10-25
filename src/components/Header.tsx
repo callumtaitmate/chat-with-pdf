@@ -9,7 +9,7 @@ import useSubscription from "@/hooks/useSubscription";
 import MobileHeader from './mobileHeader';
 
 function Header() {
-    const { hasActiveMembership } = useSubscription();
+    const { hasActiveMembership, isOverFileLimit } = useSubscription();
     const [isOpen, setIsOpen] = useState<any | null>(false);
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -41,15 +41,16 @@ function Header() {
                                 </Button>
                             }
 
+
                             <Button asChild variant="outline" className=''>
                                 <Link href="/dashboard">My Documents</Link>
                             </Button>
-
-                            <Button asChild variant="outline" className=''>
+                            {!isOverFileLimit && <Button asChild variant="outline" className=''>
                                 <Link href="/dashboard/upload">
                                     <FilePlus2 className='text-indigo-600'></FilePlus2>
                                 </Link>
-                            </Button>
+                            </Button>}
+
                             <UpgradeButton />
                             <UserButton />
 
