@@ -18,6 +18,11 @@ export default function Component() {
                     <nav className="text-right">
                         <h3>gpt-3.5-turbo</h3>
                     </nav>
+                    <Link href="/blog">
+                        <nav >
+                            <p>blog</p>
+                        </nav>
+                    </Link>
                 </div>
             </header>
             <main className="container mx-auto px-4 py-16 text-center">

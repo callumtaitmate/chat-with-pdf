@@ -1,0 +1,14 @@
+
+
+{
+    "rewrites": [
+      {
+        "source": "/blog/:path*",
+        "destination": "https://chat-with-pdf-blog-callumtaitmates-projects.vercel.app/:path*"
+      },
+      {
+        "source": "/posts/:path*",
+        "destination": "https://chat-with-pdf-blog-callumtaitmates-projects.vercel.app/posts/:path*"
+      }
+    ]
+  }
