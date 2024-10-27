@@ -6,7 +6,7 @@ import Document from "./Document";
 
 
 async function Documents() {
-    auth().protect();
+    auth.protect();
 
     const { userId } = await auth();
 

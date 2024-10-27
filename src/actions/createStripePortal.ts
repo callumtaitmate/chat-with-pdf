@@ -4,7 +4,7 @@ import { adminDb } from "../../firebaseAdmin";
 import stripe from "@/lib/stripe";
 import getBaseUrl from "@/lib/getBaseUrl";
 export async function createStripePortal() {
-  auth().protect();
+  auth.protect();
 
   const { userId } = await auth();
   if (!userId) {

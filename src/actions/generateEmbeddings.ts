@@ -5,7 +5,7 @@ import { GenerateEmbeddingsInPineconeVectorStore } from "@/lib/langchain";
 import { adminDb } from "../../firebaseAdmin";
 
 export async function GenerateEmbeddings(docId: string) {
-  auth().protect();
+  auth.protect();
   const { userId } = await auth();
 
   if (!userId) {

@@ -6,7 +6,7 @@ import stripe from "@/lib/stripe";
 import { adminDb } from "../../../firebaseAdmin";
 
 export async function POST(req: NextRequest) {
-  const headersList = headers();
+  const headersList = await headers();
   const body = await req.text();
   const signature = headersList.get("stripe-signature");
 

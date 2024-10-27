@@ -5,12 +5,13 @@ import Chat from "@/components/Chat";
 
 type Params = Promise<{ id: string}>
 
-async function ChatToFilePage({params: { id }
-}: {
-    params: {
-        id: string;
-    }
-}) {
+async function ChatToFilePage(props: {
+    params: Params
+  }) 
+  {
+    const params = await props.params;
+    const id = params.id;
+
     
     await auth.protect();
     const { userId } = await auth();

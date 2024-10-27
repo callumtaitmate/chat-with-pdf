@@ -7,7 +7,7 @@ import { revalidatePath } from "next/cache";
 import { adminStorage } from "../../firebaseAdmin";
 
 export async function deleteDocument(docId: string) {
-  auth().protect();
+  auth.protect();
 
   const { userId } = await auth();
 
