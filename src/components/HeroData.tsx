@@ -1,5 +1,4 @@
 'use client';
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from 'next/link';
 import features from "@/components/ui/features";
@@ -19,12 +18,20 @@ export default function Component() {
                             <div className="w-6 h-6 bg-indigo-600 rounded mr-1" />
                             <span className="font-bold text-xl font-mono">ResearchXcelerator</span>
                         </div>
+                        <div className="flex">
 
-                        <Link href="/blog" className="font-semibold text-gray-700">
-                            <nav >
-                                <p>blog</p>
-                            </nav>
-                        </Link>
+                            <Link href="/feedback" className="font-semibold text-gray-700 mr-2">
+                                <nav >
+                                    <p>feedback</p>
+                                </nav>
+                            </Link>
+                            <Link href="/blog" className="font-semibold text-gray-700">
+                                <nav >
+                                    <p>blog</p>
+                                </nav>
+                            </Link>
+                        </div>
+
                     </div>
                 </div>
             </header>

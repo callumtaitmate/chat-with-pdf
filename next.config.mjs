@@ -3,6 +3,21 @@
 
 const nextConfig = {
   
+  experimental: {
+    serverActions: {
+      allowedOrigins: [
+        "https://www.researchxcelerator.com/",
+        "www.researchxcelerator.com/",
+        "https://www.chat-with-pdf-roadmap.vercel.app/",
+        "www.chat-with-pdf-roadmap.vercel.app/",
+        "https://www.researchxcelerator.com",
+        "www.researchxcelerator.com",
+        "https://www.chat-with-pdf-roadmap.vercel.app",
+        "www.chat-with-pdf-roadmap.vercel.app",
+      ],
+    },
+  },
+  
   
   images: {
     remotePatterns: [

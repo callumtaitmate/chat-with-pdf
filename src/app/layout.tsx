@@ -3,6 +3,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react"
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 export const metadata: Metadata = {
@@ -23,7 +24,10 @@ export default function RootLayout({
           {children}
           <Analytics />
 
+
         </body>
+
+        <GoogleAnalytics gaId="G-7JZYW59B79" />
       </html>
     </ClerkProvider>
   );

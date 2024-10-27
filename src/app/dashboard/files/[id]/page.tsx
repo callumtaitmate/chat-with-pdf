@@ -3,14 +3,16 @@ import { adminDb } from "../../../../../firebaseAdmin";
 import PDFViewer from "@/components/PDFViewer";
 import Chat from "@/components/Chat";
 
-async function ChatToFilePage({
-    params: { id }
+type Params = Promise<{ id: string}>
+
+async function ChatToFilePage({params: { id }
 }: {
     params: {
         id: string;
     }
 }) {
-    auth().protect();
+    
+    await auth.protect();
     const { userId } = await auth();
 
     const ref = await adminDb
