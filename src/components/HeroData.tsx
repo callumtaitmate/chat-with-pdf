@@ -44,7 +44,7 @@ export default function Component() {
                     Transform PDFs into <br /> Dyanmic Conversations
                 </h1>
                 <p className="text-muted-foreground text-gray-600 mb-8">
-                    'ResearchXcelerator' turns static PDFs into <span className="font-semibold text-indigo-500">dynamic conversations</span>, optimising market research.
+                    ResearchXcelerator turns static PDFs into <span className="font-semibold text-indigo-500">dynamic conversations</span>, optimising market research.
                 </p>
                 <div className="flex justify-center space-x-4">
                     <UploadButton />
