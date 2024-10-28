@@ -12,7 +12,7 @@ const TopBar: React.FC = () => {
 
 
             <div className="flex-col items-center py-2">
-                <span className="mr-4">📢 This tool is in beta and video function isn't available yet, only chat.</span>
+                <span className="mr-4">📢 This tool is in beta.</span>
                 <button
                     className="bg-indigo-600 my-3 text-white px-3 py-1 rounded-md hover:bg-indigo-700 transition"
                     onClick={() => route.push('/dashboard')}
