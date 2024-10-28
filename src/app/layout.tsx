@@ -9,8 +9,8 @@ import { Suspense } from "react";
 
 
 export const metadata: Metadata = {
-  title: "ResearchXcelerator",
-  description: "Upload and distil information from company reports.",
+  title: "PDFtoBrainrot",
+  description: "Upload PDFs to view in Brainrot format.",
 };
 
 export default function RootLayout({
