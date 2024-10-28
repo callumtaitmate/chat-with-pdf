@@ -3,12 +3,14 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react"
-import { GoogleAnalytics } from '@next/third-parties/google'
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@/components/CookieBanner';
+import { Suspense } from "react";
 
 
 export const metadata: Metadata = {
-  title: "ResearchXcelerator",
-  description: "Upload and distil information from company reports.",
+  title: "PDFtoBrainrot",
+  description: "Upload PDFs to view in Brainrot format.",
 };
 
 export default function RootLayout({
@@ -19,15 +21,21 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="flex flex-col">
-          <Toaster />
-          {children}
-          <Analytics />
+        <Suspense>
+          <GoogleAnalytics GA_MEASUREMENT_ID='G-7JZYW59B79' />
+
+          <body className="flex flex-col">
+            <Toaster />
+            {children}
+
+            <CookieBanner />
+            <Analytics />
 
 
-        </body>
 
-        <GoogleAnalytics gaId="G-7JZYW59B79" />
+          </body>
+        </Suspense>
+
       </html>
     </ClerkProvider>
   );

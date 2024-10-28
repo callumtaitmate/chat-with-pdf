@@ -16,37 +16,27 @@ export default function Component() {
                     <div className="flex justify-between">
                         <div className="flex">
                             <div className="w-6 h-6 bg-indigo-600 rounded mr-1" />
-                            <span className="font-bold text-xl font-mono">ResearchXcelerator</span>
-                        </div>
-                        <div className="flex">
-
-                            <Link href="/feedback" className="font-semibold text-gray-700 mr-2">
-                                <nav >
-                                    <p>feedback</p>
-                                </nav>
-                            </Link>
-                            <Link href="/blog" className="font-semibold text-gray-700">
-                                <nav >
-                                    <p>blog</p>
-                                </nav>
-                            </Link>
+                            <span className="font-bold text-xl font-mono">PDF To Brainrot</span>
                         </div>
 
                     </div>
                 </div>
             </header>
+            
             <main className="container mx-auto px-4 py-16 text-center">
+                
+            <TopBar />
                 <Link href="/dashboard">
-                    <div className="inline-flex items-center bg-indigo-100 text-indigo-600 rounded-full px-4 py-1 text-sm mb-6">
+                    <div className="inline-flex items-center mt-10 bg-indigo-100 text-indigo-600 rounded-full px-4 py-1 text-sm mb-6">
 
-                        <p className="font-semibold"> Your first 3 documents <span className="text-green-500 font-semibold animate-pulse">Free</span> </p> <ArrowRight className="w-4 h-4 ml-2" />
+                        <p className="font-semibold"> Your first 3 videos <span className="text-green-500 font-semibold animate-pulse">Free</span> </p> <ArrowRight className="w-4 h-4 ml-2" />
                     </div>
                 </Link>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    Transform Annual Company Reports into <br /> Interactive Conversations
+                    Transform PDFs into <br /> Brainrot
                 </h1>
                 <p className="text-muted-foreground text-gray-600 mb-8">
-                    This Bot turns static reports into <span className="font-semibold text-indigo-500">dynamic conversations</span>, enhancing market research productivity 10x effortlessly.
+                    'PDF to Brainrot' turns static PDFs into <span className="font-semibold text-indigo-500">dynamic brainrot videos</span>, enhancing learning experience and 10x'ing retention.
                 </p>
                 <div className="flex justify-center space-x-4">
                     <UploadButton />
@@ -82,7 +72,6 @@ export default function Component() {
                         ))}
                     </dl>
                 </div>
-                <TopBar />
 
 
             </main>
