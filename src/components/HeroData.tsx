@@ -41,10 +41,10 @@ export default function Component() {
                     </div>
                 </Link>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    Transform PDFs into <br /> Dyanmic Conversations
+                    Transform Annual Company Reports into <br /> Dyanmic Conversations
                 </h1>
                 <p className="text-muted-foreground text-gray-600 mb-8">
-                    ResearchXcelerator turns static PDFs into <span className="font-semibold text-indigo-500">dynamic conversations</span>, optimising market research.
+                    ResearchXcelerator turns annual company reports into <span className="font-semibold text-indigo-500">dynamic conversations</span>, optimising market research.
                 </p>
                 <div className="flex justify-center space-x-4">
                     <UploadButton />
@@ -57,6 +57,7 @@ export default function Component() {
                             src="https://fast.wistia.net/embed/iframe/rof86klaod?seo=true&videoFoam=true"
                             className="w-full aspect-video mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/5"
                             allowFullScreen
+                            title="ResearchXcelerator Demo Video"
 
                         />
                     </div>

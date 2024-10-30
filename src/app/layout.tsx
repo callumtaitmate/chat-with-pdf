@@ -19,24 +19,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+
+
+    <ClerkProvider dynamic>
+
       <html lang="en">
+
         <Suspense>
           <GoogleAnalytics GA_MEASUREMENT_ID='G-7JZYW59B79' />
 
+
           <body className="flex flex-col">
+
             <Toaster />
             {children}
-
             <CookieBanner />
             <Analytics />
-
-
-
+            
           </body>
+
         </Suspense>
 
       </html>
+
     </ClerkProvider>
+
   );
 }
