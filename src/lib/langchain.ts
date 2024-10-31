@@ -16,7 +16,7 @@ import { auth } from "@clerk/nextjs/server";
 
 const model = new ChatOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  modelName: "gpt-3.5-turbo",
+  modelName: "gpt-4",
 });
 
 export const indexName = "chat-with-pdf";

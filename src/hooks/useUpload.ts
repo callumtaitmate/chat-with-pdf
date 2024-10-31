@@ -14,7 +14,7 @@ export enum StatusText {
   UPLOADING = "Uploading file...",
   UPLOADED = "File uploaded successfully.",
   SAVING = "Saving file to database...",
-  GENERATING = "Generating AI embeddings... This will only take a few seconds.",
+  GENERATING = "Generating AI Model... This will take no longer than 45 seconds.",
   ERROR = "Please use the feedback form on the homepage to log any comments.",
 }
 
@@ -29,7 +29,7 @@ function useUpload() {
 
 
 
-  const fileLimit = (hasActiveMembership ? 21000 : 1024);
+  const fileLimit = (hasActiveMembership ? 30000 : 1024);
   const [fileTooBig, setFileTooBig] = useState<any | null>(null);
 
   const handleUpload = async (file: File) => {

@@ -5,7 +5,7 @@ import Chat from "@/components/Chat";
 
 type Params = Promise<{ id: string }>
 
-export const maxDuration = 30; // This function can run for a maximum of 30 seconds
+export const maxDuration = 45; // This function can run for a maximum of 45 seconds
 export const dynamic = 'force-dynamic';
 
 async function ChatToFilePage(props: {
