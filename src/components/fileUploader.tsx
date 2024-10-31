@@ -76,7 +76,7 @@ function FileUploader() {
     return (
         <div className='flex flex-col gap-4 items-center max-w-7xl mx-auto'>
             {uploadInProgress && (
-                <div className='mt-32 flex flex-col justify-center items-center gap-5'>
+                <div className='mt-32 p-6 flex flex-col justify-center items-center gap-5'>
                     <div className={`radial-progress bg-indio-300 text-white border-indigo-600 border-4 ${progress === 100 && "hidden"}`}
                         role='progressbar'
                         style={{

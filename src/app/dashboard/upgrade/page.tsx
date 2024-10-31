@@ -4,7 +4,7 @@ import useSubscription from "@/hooks/useSubscription";
 import getStripe from "@/lib/stripe-js";
 import { useUser } from "@clerk/nextjs";
 import { CheckIcon } from "lucide-react"
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { createCheckoutSesssion } from "@/actions/createCheckoutSesssion";
 import { createStripePortal } from "@/actions/createStripePortal";
@@ -49,7 +49,7 @@ function PricingPage() {
 
     return (
         <div>
-            <div className="bg-white py-16 sm:py-24">
+            <div className="bg-gradient-to-bl from-white to-indigo-100 py-16 sm:py-24">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
                     <p className="mt-2 text-4xl font-bold tracking-light text-gray-900 sm:text-5xl">Supercharge Your Document Companion</p>
@@ -83,6 +83,11 @@ function PricingPage() {
                             <li className="flex gap-x-3">
                                 <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
                                 Try out the AI chat functionality
+
+                            </li>
+                            <li className="flex gap-x-3">
+                                <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
+                                Maximum File Size 2.3MB
 
                             </li>
                         </ul>
@@ -130,6 +135,12 @@ function PricingPage() {
                             <li className="flex gap-x-3">
                                 <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
                                 Full-power AI chat functionality with Memory Recall
+
+                            </li>
+                            
+                            <li className="flex gap-x-3">
+                                <CheckIcon className="h-6 w-5 flex-non text-indigo-600" />
+                                Maximum File Size 20MB
 
                             </li>
 

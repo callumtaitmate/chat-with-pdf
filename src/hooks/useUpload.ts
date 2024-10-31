@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import { storage, db } from "../../firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { GenerateEmbeddings } from "@/actions/generateEmbeddings";
-
+import useSubscription from "@/hooks/useSubscription";
 import { toast } from "@/components/ui/use-toast";
 
 export enum StatusText {
@@ -15,7 +15,7 @@ export enum StatusText {
   UPLOADED = "File uploaded successfully.",
   SAVING = "Saving file to database...",
   GENERATING = "Generating AI embeddings... This will only take a few seconds.",
-  ERROR = "Your file is too big. Maximum file size 500kB.",
+  ERROR = "Please use the feedback form on the homepage to log any comments.",
 }
 
 export type Status = StatusText[keyof StatusText];
@@ -25,7 +25,11 @@ function useUpload() {
   const [fileId, setFileId] = useState<string | null>(null);
   const [status, setStatus] = useState<any | null>(null);
   const { user } = useUser();
-  const fileLimit = 500;
+  const { hasActiveMembership } = useSubscription();
+
+
+
+  const fileLimit = (hasActiveMembership ? 21000 : 1024);
   const [fileTooBig, setFileTooBig] = useState<any | null>(null);
 
   const handleUpload = async (file: File) => {
@@ -86,7 +90,7 @@ function useUpload() {
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Filesize too big. Maximum file size 500kB.",
+        description: "Filesize too big. Click Upgrade to access greater filesizes.",
         duration: 2000,
       });
     }

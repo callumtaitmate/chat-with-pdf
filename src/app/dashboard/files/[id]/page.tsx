@@ -3,16 +3,18 @@ import { adminDb } from "../../../../../firebaseAdmin";
 import PDFViewer from "@/components/PDFViewer";
 import Chat from "@/components/Chat";
 
-type Params = Promise<{ id: string}>
+type Params = Promise<{ id: string }>
+
+export const maxDuration = 30; // This function can run for a maximum of 30 seconds
+export const dynamic = 'force-dynamic';
 
 async function ChatToFilePage(props: {
     params: Params
-  }) 
-  {
+}) {
     const params = await props.params;
     const id = params.id;
 
-    
+
     await auth.protect();
     const { userId } = await auth();
 

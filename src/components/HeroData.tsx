@@ -5,8 +5,9 @@ import features from "@/components/ui/features";
 import TopBar from "./contact";
 import UploadButton from "./UploadButton";
 
-export default function Component() {
 
+
+export default function Component() {
 
 
     return (
@@ -80,6 +81,18 @@ export default function Component() {
                             </div>
                         ))}
                     </dl>
+                </div>
+                <div className="flex justify-center space-x-2">
+                    <Link href="/info/tos">
+                        <p>Terms</p>
+                    </Link>
+                    <Link href="/info/privacy-policy">
+                        <p>Privacy</p>
+                    </Link>
+                    
+                    <Link href="/info/cookies">
+                        <p>Cookies</p>
+                    </Link>
                 </div>
 
 

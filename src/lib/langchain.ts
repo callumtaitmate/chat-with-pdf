@@ -95,6 +95,8 @@ async function namespaceExists(
   return namespaces?.[namespace] !== undefined;
 }
 
+
+
 export async function GenerateEmbeddingsInPineconeVectorStore(docId: string) {
   const { userId } = await auth();
 
@@ -135,6 +137,9 @@ export async function GenerateEmbeddingsInPineconeVectorStore(docId: string) {
         namespace: docId,
       }
     );
+
+    console.log("Embeddings stored in Pinecone successfully.")
+    
   }
 }
 

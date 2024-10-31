@@ -8,7 +8,7 @@ import UpgradeButton from './UpgradeButton'
 import useSubscription from "@/hooks/useSubscription";
 
 function MobileHeader() {
-    const { hasActiveMembership } = useSubscription();
+    const { hasActiveMembership, isOverFileLimit } = useSubscription();
     return (
         <div className='flex max-w-screen justify-between bg-white shadow-sm p-5 border-b'>
 
@@ -28,11 +28,11 @@ function MobileHeader() {
                             <Link href="/dashboard">My Documents</Link>
                         </Button>
 
-                        <Button asChild variant="outline" className=''>
-                            <Link href="/dashboard/upload">
-                                <FilePlus2 className='text-indigo-600'></FilePlus2>
-                            </Link>
-                        </Button>
+                        {!isOverFileLimit && <Button asChild variant="outline" className=''>
+                                <Link href="/dashboard/upload">
+                                    <FilePlus2 className='text-indigo-600'></FilePlus2>
+                                </Link>
+                            </Button>}
                         <UpgradeButton />
                     </div>
 
