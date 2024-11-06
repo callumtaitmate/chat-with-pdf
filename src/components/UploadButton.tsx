@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Loader2Icon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
+import * as fbq from "../lib/fpixel";
 
 
 
@@ -13,7 +14,8 @@ export default function UploadButton() {
 
     const handleAccount = () => {
         startTransition(async () => {
-            router.push("/dashboard");
+            fbq.event("SignUp_Intent");
+            router.push("/sign-up");
 
         })
     }
@@ -28,7 +30,7 @@ export default function UploadButton() {
             {isPending ? (<Loader2Icon className="animate-spin" />) : (
                 <p>
                     <span>Upload PDF </span>
-                    
+
                 </p>
 
             )}

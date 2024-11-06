@@ -52,7 +52,7 @@ function PDFViewer({ url }: { url: string }) {
                         Prev
                     </Button>
                     <div>
-                        <Input type="number" max={numPages} placeholder="Skip to" onChange={(e) => setPageNumber(e.target.valueAsNumber)} className="p-2"></Input>
+                        <Input type="number" max={numPages} min={0} placeholder="Skip to" onChange={(e) => setPageNumber(e.target.valueAsNumber)} className="p-2"></Input>
                     </div>
                     <p className="flex items-center justify-center text-sm">{pageNumber} of {numPages}</p>
                     <Button
