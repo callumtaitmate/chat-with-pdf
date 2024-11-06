@@ -32,10 +32,10 @@ export default function CookieBanner() {
     return (
         <div className={`my-10 mx-auto max-w-max md:max-w-screen-sm
                         fixed bottom-0 left-0 right-0 
-                        ${cookieConsent != null ? "hidden" : "flex"}  px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
+                        ${cookieConsent != null ? "hidden" : "flex"} px-3 md:px-4 py-3 justify-between items-center flex sm:flex-row gap-4  
                          bg-indigo-600 text-white rounded-lg shadow`}>
 
-            <div className='text-center'>
+            <div className='text-center text-sm'>
                 <Link href="/info/cookies"><p>We use <span className='font-bold text-white'>cookies</span> on our site.</p></Link>
             </div>
 

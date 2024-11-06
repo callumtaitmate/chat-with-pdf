@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { filesize } from "filesize";
 import useSubscription from "@/hooks/useSubscription"
 import { useTransition } from "react";
-import { DownloadCloudIcon, TrashIcon } from "lucide-react";
+import { DownloadCloudIcon, TrashIcon, Loader2Icon } from "lucide-react";
 import { Button } from "./ui/button";
 import { deleteDocument } from "@/actions/deleteDocument";
 
@@ -31,7 +31,8 @@ function Document({ id, name, size, downloadUrl }:
             </div>
 
 
-            <div className="flex space-x-2 justify-end">
+
+            {isDeleting ? (<div className="flex"><Loader2Icon className="animate-spin text-red-500" /><p className="text-red-500 ml-2">Deleting</p></div>) : (<div className="flex space-x-2 justify-end">
                 <Button variant="outline"
                     disabled={isDeleting || !hasActiveMembership}
                     onClick={() => {
@@ -55,7 +56,7 @@ function Document({ id, name, size, downloadUrl }:
                         <DownloadCloudIcon className="h-6 w-6 text-indigo-600" />
                     </a>
                 </Button>
-            </div>
+            </div>)}
         </div>
     )
 }

@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/blog/:path*",
-      "destination": "https://chat-with-pdf-blog-callumtaitmates-projects.vercel.app/:path*"
+      "destination": "https://chat-with-pdf-blog.vercel.app/:path*"
     },
     {
       "source": "/posts/:path*",
-      "destination": "https://chat-with-pdf-blog-callumtaitmates-projects.vercel.app/posts/:path*"
+      "destination": "https://chat-with-pdf-blog.vercel.app/posts/:path*"
     },
     {
       "source": "/feedback/:path*",

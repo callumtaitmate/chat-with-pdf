@@ -32,7 +32,7 @@ export default function Component() {
                 </div>
             </header>
 
-            <main className="container mx-auto px-4 py-16 text-center">
+            <main className="container mx-auto px-4 py-5 text-center">
 
                 <TopBar />
                 <Link href="/dashboard">
@@ -41,7 +41,7 @@ export default function Component() {
                         <p className="font-semibold"> Your first 3 documents <span className="text-green-500 font-semibold animate-pulse">Free</span> </p> <ArrowRight className="w-4 h-4 ml-2" />
                     </div>
                 </Link>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                <h1 className="text-3xl md:text-4xl font-bold mb-6">
                     Transform Annual Company Reports into <br /> Dyanmic Conversations
                 </h1>
                 <p className="text-muted-foreground text-gray-600 mb-8">
@@ -68,7 +68,7 @@ export default function Component() {
                 <div className="mt-10 px-8">
                     <dl className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-muted-foreground sm:grid-cols-2 lg:mx-4 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16 justify-items-center">
                         {features.map((feature) => (
-                            <div key={feature.description} className="flex justify-center rounded-sm flex-col hover:shadow-sm">
+                            <div key={feature.description} className="flex justify-center rounded-sm flex-col">
                                 <dt className="mx-auto">
                                     <feature.icon
                                         aria-hidden="true"
@@ -89,7 +89,7 @@ export default function Component() {
                     <Link href="/info/privacy-policy">
                         <p>Privacy</p>
                     </Link>
-                    
+
                     <Link href="/info/cookies">
                         <p>Cookies</p>
                     </Link>

@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 export default function PrivacyPolicy() {
     return (
-        <main className="h-dvh bg-gradient-to-bl from-white to-indigo-100 flex-1 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-auto">
+        <main className="bg-gradient-to-bl from-white to-indigo-100 flex-1 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-slate-300 overflow-y-auto">
             <div>
 
-                <div className="h-dvh bg-gradient-to-bl from-white to-indigo-100">
+                <div className="">
                     <header className="items-center p-4">
                         <div className="items-center space-x-2">
                             <div className="flex justify-between">
@@ -39,27 +39,27 @@ export default function PrivacyPolicy() {
                         </p>
                         <div className=''>
                             <h3>TABLE OF CONTENTS</h3>
-                            
-                            <br/>
+
+                            <br />
                             <p>1. WHAT INFORMATION DO WE COLLECT?<br />2. HOW DO WE PROCESS YOUR INFORMATION?<br />3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?<br />4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?<br />5. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?<br />6. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?<br />7. HOW DO WE HANDLE YOUR SOCIAL LOGINS?<br />8. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?<br />9. HOW LONG DO WE KEEP YOUR INFORMATION?<br />10. HOW DO WE KEEP YOUR INFORMATION SAFE?<br />11. DO WE COLLECT INFORMATION FROM MINORS?<br />12. WHAT ARE YOUR PRIVACY RIGHTS?<br />13. CONTROLS FOR DO-NOT-TRACK FEATURES<br />14. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?<br />15. DO VIRGINIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?<br />16. DO WE MAKE UPDATES TO THIS NOTICE?<br />17. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?<br />18. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</p>
-                           
-                            <br/>
+
+                            <br />
                             <h1>1. WHAT INFORMATION DO WE COLLECT?</h1>
 
-                            
-                            <br/>
-                            <p><strong>Personal information you disclose to us</strong></p>
-                            <p><em><strong>In Short:</strong> We collect personal information that you provide to us.</em></p>
-                            <p>We collect personal information that you voluntarily provide to us when you&nbsp;[register on the Services,] express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
-                            <p><strong>Personal Information Provided by You.</strong> The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:</p>
+
+                            <br />
+                            <p><strong>Personal information you disclose to us</strong></p><br />
+                            <p><em><strong>In Short:</strong> We collect personal information that you provide to us.</em></p><br />
+                            <p>We collect personal information that you voluntarily provide to us when you register for our services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
+                            <br /> <p><strong>Personal Information Provided by You.</strong> The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:</p>
                             <ul>
-                                <li>[Email]</li>
+                                <li>Email, Google Profile Picture and email.</li><br />
                             </ul>
-                            <p><strong>Sensitive Information.</strong> [We do not process sensitive information. / When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:</p>
+                            <p><strong>Sensitive Information.</strong> When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:</p>
                             <ul>
-                                <li>[First Name]</li>
+                                <li>First Name</li><br />
                             </ul>
-                            <p><strong>Payment Data.</strong> We may collect data necessary to process your payment if you make purchases, such as your payment instrument number (such as a credit card number), and the security code associated with your payment instrument. All payment data is stored by&nbsp;[Vendor Name]. You may find their privacy notice link(s) here:&nbsp;[https://stripe.com/privacy].</p>
+                            <p><strong>Payment Data.</strong> We may collect data necessary to process your payment if you make purchases, such as your payment instrument number (such as a credit card number), and the security code associated with your payment instrument. All payment data is stored by&nbsp;Stripe. You may find their privacy notice link(s) here:&nbsp;[https://stripe.com/privacy].</p>
                             <p><strong>Social Media Login Data.</strong> We may provide you with the option to register with us using your existing social media account details, like your Facebook, Twitter, or other social media account. If you choose to register in this way, we will collect the information described in the section called &ldquo;<em>HOW DO WE HANDLE YOUR SOCIAL LOGINS?</em>&rdquo; below.</p>
                             <p>[<strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:</p>
                             <ul>
@@ -70,6 +70,8 @@ export default function PrivacyPolicy() {
                             </ul>
                             <p>This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.]</p>
                             <p>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
+
+                            <br />
                             <p><strong>Information automatically collected</strong></p>
                             <p><em><strong>In Short:</strong> Some information &mdash; such as your Internet Protocol (IP) address and/or browser and device characteristics &mdash; is collected automatically when you visit our Services.</em></p>
                             <p>We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.</p>
@@ -79,7 +81,7 @@ export default function PrivacyPolicy() {
                                 <li><em>Log and Usage Data.</em> Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called &ldquo;crash dumps&rdquo;), and hardware settings).</li>
                                 <li><em>Device Data.</em> We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.</li>
                                 <li><em>Location Data.</em> We collect location data such as information about your device&rsquo;s location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if you choose to opt out, you may not be able to use certain aspects of the Services.</li>
-                                <li>[Other]</li>
+
                             </ul>
                             <p><strong>Information collected from other sources</strong></p>
                             <p><em><strong>In Short:</strong> We may collect limited data from public databases, marketing partners, social media platforms, and other outside sources.</em></p>
@@ -102,7 +104,7 @@ export default function PrivacyPolicy() {
                                 <li><strong>To identify usage trends.</strong> We may process information about how you use our Services to better understand how they are being used so we can improve them.</li>
                                 <li><strong>To determine the effectiveness of our marketing and promotional campaigns.</strong> We may process your information to better understand how to provide marketing and promotional campaigns that are most relevant to you.</li>
                                 <li><strong>To save or protect an individual&rsquo;s vital interest.</strong> We may process your information when necessary to save or protect an individual&rsquo;s vital interest, such as to prevent harm.</li>
-                                <li>[Other]</li>
+
                             </ul>
                             <h3>3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</h3>
                             <p><em><strong>In Short:</strong> We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.</em></p>
@@ -119,7 +121,7 @@ export default function PrivacyPolicy() {
                                         <li>Support our marketing activities</li>
                                         <li>Diagnose problems and/or prevent fraudulent activities</li>
                                         <li>Understand how our users use our products and services so we can improve user experience</li>
-                                        <li>[Other]</li>
+
                                     </ul>
                                 </li>
                                 <li><strong>Legal Obligations.</strong> We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.</li>
@@ -164,7 +166,6 @@ export default function PrivacyPolicy() {
                                 <li>Testing Tools</li>
                                 <li>User Account Registration &amp; Authentication Services</li>
                                 <li>Website Hosting Service Providers</li>
-                                <li>[Other]</li>
                             </ul>
                             <p>We also may need to share your personal information in the following situations:</p>
                             <ul>
@@ -194,16 +195,16 @@ export default function PrivacyPolicy() {
                             <p>Binding Corporate Rules:</p>
                             <p>These include a set of Binding Corporate Rules (&ldquo;BCRs&rdquo;) established and implemented by&nbsp;[Company Name]. Our BCRs have been recognized by EEA and UK data protection authorities as providing an adequate level of protection to the personal information we process internationally. You can find a copy of our BCRs here:&nbsp;[BCRs URL].</p>
                             <p>[EU-US] and&nbsp;[Swiss-US] Privacy Shield Framework[s]</p>
-                            <p>[Company Name] and the following entities and subsidiaries:&nbsp;[List of Entities/Subsidiaries] comply with the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield Framework[s] as set forth by the US Department of Commerce regarding the collection, use, and retention of personal information transferred from&nbsp;[the European Union (EU)],&nbsp;[the UK], and&nbsp;[Switzerland] to the United States. Although Privacy Shield is no longer considered a valid transfer mechanism for the purposes of&nbsp;[EU] and&nbsp;[Swiss] data protection law, in light of the judgment of the Court of Justice of the European Union in Case C-311/18 and opinion of the Federal Data Protection and Information Commissioner of Switzerland dated 8 September 2020,&nbsp;[Company Name] will continue to comply with the principles of the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield Framework[s]. To learn more about the Privacy Shield program, please visit&nbsp;<a href="https://www.privacyshield.gov/welcome" target="_blank" rel="noopener">www.privacyshield.gov</a>. To view our certification, please visit&nbsp;[Privacy Shield Certification URL].</p>
-                            <p>[Company Name] adheres to and complies with the Privacy Shield Principles when processing personal information from&nbsp;[the EU],&nbsp;[UK], or&nbsp;[Switzerland]. If we have received your personal information in the United States and subsequently transfer that information to a third party acting as our agent, and such third party agent processes your personal information in a manner inconsistent with the Privacy Shield Principles, we will remain liable unless we can prove we are not responsible for the event giving rise to the damage.</p>
-                            <p>With respect to personal information received or transferred pursuant to the Privacy Shield Framework[s],&nbsp;[Company Name] is subject to the investigatory and enforcement powers of the US Federal Trade Commission (&ldquo;FTC&rdquo;). In certain situations, we may be required to disclose personal information in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.</p>
-                            <p>If you have any questions or concerns relating to&nbsp;[Company Name]&rsquo;s Privacy Shield certification, please write to us at the contact details below. We commit to resolving any complaints or disputes about our collection and use of your personal information under the Privacy Shield.&nbsp;[However, if you have an unresolved complaint in connection with our certification, we commit to cooperating with the panel established by [the EU data protection authorities (DPAs)], [the UK Information Commissioner], and [the Swiss Federal Data Protection and Information Commissioner], as applicable, and to comply with the advice given by them in respect of the complaint. Click here for a&nbsp;<a href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" target="_blank" rel="noopener">list of EU DPAs</a>. / However, if you have an unresolved complaint in connection with our certification, you may contact our independent dispute resolution provider based in the [EU/United States], [Dispute Resolution Provider Name]. Please visit [Dispute Resolution Provider URL] for more information or to file a complaint. These services are provided to you free of charge.]</p>
+                            <p>ResearchXcelerator and the following entities and subsidiaries:&nbsp;[(No other subsidiaries)] comply with the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield Framework[s] as set forth by the US Department of Commerce regarding the collection, use, and retention of personal information transferred from&nbsp;[the European Union (EU)],&nbsp;[the UK], and&nbsp;[Switzerland] to the United States. Although Privacy Shield is no longer considered a valid transfer mechanism for the purposes of&nbsp;[EU] and&nbsp;[Swiss] data protection law, in light of the judgment of the Court of Justice of the European Union in Case C-311/18 and opinion of the Federal Data Protection and Information Commissioner of Switzerland dated 8 September 2020,&nbsp;[Company Name] will continue to comply with the principles of the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield Framework[s]. To learn more about the Privacy Shield program, please visit&nbsp;<a href="https://www.privacyshield.gov/welcome" target="_blank" rel="noopener">www.privacyshield.gov</a>. To view our certification, please visit&nbsp;[Privacy Shield Certification URL].</p>
+                            <p>[ResearchXcelerator] adheres to and complies with the Privacy Shield Principles when processing personal information from&nbsp;[the EU],&nbsp;[UK], or&nbsp;[Switzerland]. If we have received your personal information in the United States and subsequently transfer that information to a third party acting as our agent, and such third party agent processes your personal information in a manner inconsistent with the Privacy Shield Principles, we will remain liable unless we can prove we are not responsible for the event giving rise to the damage.</p>
+                            <p>With respect to personal information received or transferred pursuant to the Privacy Shield Framework[s],&nbsp;[ResearchXcelerator] is subject to the investigatory and enforcement powers of the US Federal Trade Commission (&ldquo;FTC&rdquo;). In certain situations, we may be required to disclose personal information in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.</p>
+                            <p>If you have any questions or concerns relating to&nbsp;[ResearchXcelerator]&rsquo;s Privacy Shield certification, please write to us at the contact details below. We commit to resolving any complaints or disputes about our collection and use of your personal information under the Privacy Shield.&nbsp;[However, if you have an unresolved complaint in connection with our certification, we commit to cooperating with the panel established by [the EU data protection authorities (DPAs)], [the UK Information Commissioner], and [the Swiss Federal Data Protection and Information Commissioner], as applicable, and to comply with the advice given by them in respect of the complaint. Click here for a&nbsp;<a href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" target="_blank" rel="noopener">list of EU DPAs</a>. / However, if you have an unresolved complaint in connection with our certification, you may contact our independent dispute resolution provider based in the [EU/United States], [Dispute Resolution Provider Name]. Please visit [Dispute Resolution Provider URL] for more information or to file a complaint. These services are provided to you free of charge.]</p>
                             <p>In limited situations,&nbsp;[EU],&nbsp;[UK], and&nbsp;[Swiss] individuals may seek redress from the Privacy Shield Panel, a binding arbitration mechanism.</p>
-                            <p>Please be sure to review the following sections of this Privacy Notice for additional details relevant to&nbsp;[Company Name]&rsquo;s participation in the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield:</p>
+                            <p>Please be sure to review the following sections of this Privacy Notice for additional details relevant to&nbsp;[ResearchXcelerator]&rsquo;s participation in the&nbsp;[EU-US] and&nbsp;[Swiss-US] Privacy Shield:</p>
                             <ul>
-                                <li><em>WHAT INFORMATION DO WE COLLECT?</em> To learn more about the types of personal data&nbsp;<em>[Company Name]</em> collects.</li>
-                                <li><em>HOW DO WE PROCESS YOUR INFORMATION?</em> To learn more about the purposes for which&nbsp;<em>[Company Name]</em> collects and uses personal information about you.</li>
-                                <li><em>WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</em> To learn more about the type or identity of third parties to which&nbsp;<em>[Company Name]</em> discloses personal information, and the purposes for which we do so.</li>
+                                <li><em>WHAT INFORMATION DO WE COLLECT?</em> To learn more about the types of personal data&nbsp;<em>[ResearchXcelerator]</em> collects.</li>
+                                <li><em>HOW DO WE PROCESS YOUR INFORMATION?</em> To learn more about the purposes for which&nbsp;<em>[ResearchXcelerator]</em> collects and uses personal information about you.</li>
+                                <li><em>WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</em> To learn more about the type or identity of third parties to which&nbsp;<em>[ResearchXcelerator]</em> discloses personal information, and the purposes for which we do so.</li>
                                 <li><em>WHAT ARE YOUR PRIVACY RIGHTS?</em> To learn more about the right of individuals to access their personal data.</li>
                             </ul>
                             <h3>9. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
@@ -230,7 +231,6 @@ export default function PrivacyPolicy() {
                             <ul>
                                 <li>Log in to your account settings and update your user account.</li>
                                 <li>Contact us using the contact information provided.</li>
-                                <li>[Other]</li>
                             </ul>
                             <p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
                             <p><strong><u>Cookies and similar technologies:</u></strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. To opt out of interest-based advertising by advertisers on our Services visit&nbsp;<a href="https://optout.aboutads.info/?c=2&amp;lang=EN" target="_blank" rel="noopener">http://www.aboutads.info/choices/</a>. For further information, please see our Cookie Notice:&nbsp;[https://researchxcelerator.com/info/cookies].</p>
@@ -351,7 +351,7 @@ export default function PrivacyPolicy() {
                                 <li>Beacons/Pixels/Tags</li>
                                 <li>Click redirects:&nbsp;[Click Redirects]</li>
                                 <li>Social media plugins:&nbsp;[Social Media Plugins]. We use social media features, such as a &ldquo;Like&rdquo; button, and widgets, such as a &ldquo;Share&rdquo; button in our Services. Such features may process your Internet Protocol (IP) address and track which page you are visiting on our website. We may place a cookie to enable the feature to work correctly. If you are logged in on a certain social media platform and you interact with a widget or button belonging to that social media platform, this information may be recorded to your profile of such social media platform. To avoid this, you should log out from that social media platform before accessing or using the Services. Social media features and widgets may be hosted by a third party or hosted directly on our Services. Your interactions with these features are governed by the privacy notices of the companies that provide them. By clicking on one of these buttons, you agree to the use of this plugin and consequently the transfer of personal information to the corresponding social media service. We have no control over the essence and extent of these transmitted data or their additional processing.</li>
-                                <li>[Other]</li>
+
                             </ul>
                             <p>More information about our data collection and sharing practices can be found in this privacy notice and our Cookie Notice:&nbsp;[https://researchxcelerator.com/info/cookies].</p>
                             <p>[You can opt out from the selling or sharing of your personal information by disabling cookies in Cookie Preference Settings and clicking on the Do Not Sell or Share My Personal Information link on our homepage.]</p>
@@ -399,17 +399,14 @@ export default function PrivacyPolicy() {
                                 <li>Retargeting Platforms</li>
                                 <li>Social Networks</li>
                                 <li>User Account Registration &amp; Authentication Services</li>
-                                <li>[Other]</li>
                             </ul>
                             <p>The categories of third parties to whom we shared personal information with are:</p>
                             <ul>
-                                <li>Ad Networks</li>
                                 <li>Affiliate Marketing Programs</li>
                                 <li>Data Analytics Services</li>
                                 <li>Retargeting Platforms</li>
                                 <li>Social Networks</li>
                                 <li>User Account Registration &amp; Authentication Services</li>
-                                <li>[Other]]</li>
                             </ul>
                             <p><strong>Your rights with respect to your personal data</strong></p>
                             <p><u>Right to request deletion of the data &mdash; Request to delete</u></p>
@@ -472,7 +469,7 @@ export default function PrivacyPolicy() {
                             <p>If we decide to offer a financial incentive, we will notify you of such financial incentive and explain the price difference, as well as material terms of the financial incentive or price of service difference, including the categories of personal information that are implicated by the financial incentive or price or service difference.</p>
                             <p>If you choose to participate in the financial incentive you can withdraw from the financial incentive at any time by emailing us at&nbsp;[callum.dtait@gmail.com], by calling us toll-free at&nbsp;[Phone Number], by visiting&nbsp;[Contact Form URL], or by referring to the contact details at the bottom of this document.</p>
                             <p><strong>Metrics</strong></p>
-                            <p>Our metrics for all CCPA requests received for the previous calendar year can be found here:&nbsp;[Metrics URL].</p>
+                            <p>Our metrics for all CCPA requests received for the previous calendar year can be found here:&nbsp;: callum.dtait@gmail.com.</p>
                             <h3>15. DO VIRGINIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h3>
                             <p><em><strong>In Short:</strong> Yes, if you are a resident of Virginia, you may be granted specific rights regarding access to and use of your personal information.</em></p>
                             <p><strong>Virginia CDPA Privacy Notice</strong></p>
@@ -481,7 +478,7 @@ export default function PrivacyPolicy() {
                             <p>&ldquo;Personal data&rdquo; means any information that is linked or reasonably linkable to an identified or identifiable natural person. &ldquo;Personal data&rdquo; does not include de-identified data or publicly available information.</p>
                             <p>&ldquo;Sale of personal data&rdquo; means the exchange of personal data for monetary consideration.</p>
                             <p>If this definition of &ldquo;consumer&rdquo; applies to you, we must adhere to certain rights and obligations regarding your personal data.</p>
-                            <p>The information we collect, use, and disclose about you will vary depending on how you interact with&nbsp;[Company Name] and our Services. To find out more, please visit the following sections above:</p>
+                            <p>The information we collect, use, and disclose about you will vary depending on how you interact with&nbsp;ResearchXcelerator and our Services. To find out more, please visit the following sections above:</p>
                             <ul>
                                 <li>1. WHAT INFORMATION DO WE COLLECT?</li>
                                 <li>2. HOW DO WE PROCESS YOUR INFORMATION?</li>
@@ -496,7 +493,7 @@ export default function PrivacyPolicy() {
                                 <li>Right to obtain a copy of the personal data you previously shared with us</li>
                                 <li>Right to opt out of the processing of your personal data if it is used for targeted advertising, the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ([&ldquo;profiling&rdquo;/&rsquo;profiling&rsquo;])</li>
                             </ul>
-                            <p>[[Company Name] has not sold any personal data to third parties for business or commercial purposes. [Company Name] will not sell personal data in the future belonging to website visitors, users, and other consumers. / [Company Name] sells personal data to third parties or processes personal data for targeted advertising. Please see the following section to find out how you can opt out from further selling or sharing of your personal data for targeted advertising or profiling purposes.]</p>
+                            <p>ResearchXcelerator has not sold any personal data to third parties for business or commercial purposes. ResearchXcelerator will not sell personal data in the future belonging to website visitors, users, and other consumers. / [Company Name] sells personal data to third parties or processes personal data for targeted advertising. Please see the following section to find out how you can opt out from further selling or sharing of your personal data for targeted advertising or profiling purposes.]</p>
                             <p>Exercise your rights provided under the Virginia CDPA</p>
                             <p>More information about our data collection and sharing practices can be found in this privacy notice and our Cookie Notice:&nbsp;[https://researchxcelerator.com/info/cookies].</p>
                             <p>[You can opt out from the selling of your personal data, targeted advertising, or profiling by disabling cookies in Cookie Preference Settings.]</p>
@@ -512,8 +509,8 @@ export default function PrivacyPolicy() {
                             <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated &ldquo;Revised&rdquo; date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
                             <h3>17. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
                             <p>If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO),&nbsp;[Callum Tait], by email at&nbsp;[callum.dtait@gmail.com], by phone at&nbsp;[Phone Number], or by post to:</p>
-                            <p>[Company Name]<br />[DPO Name]<br />[Street Address]<br />[City, State ZIP Code]<br />[Country]</p>
-                            </div>
+                            <p>ResearchXcelerator<br />Callum Tait<br />[N/A]<br />[N/A]<br />[United Kingdom]</p>
+                        </div>
 
                     </div>
                 </div>

@@ -6,6 +6,8 @@ import { Analytics } from "@vercel/analytics/react"
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieBanner from '@/components/CookieBanner';
 import { Suspense } from "react";
+import { FacebookPixel } from "@/components/FacebookPixel";
+
 
 
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ export default function RootLayout({
 
     <ClerkProvider dynamic>
 
+
       <html lang="en">
 
         <Suspense>
@@ -35,7 +38,8 @@ export default function RootLayout({
             {children}
             <CookieBanner />
             <Analytics />
-            
+            <FacebookPixel />
+
           </body>
 
         </Suspense>
