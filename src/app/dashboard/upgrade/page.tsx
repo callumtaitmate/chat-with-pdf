@@ -101,7 +101,7 @@ function PricingPage() {
                         </p>
                         <p className="mt-6 flex items-baseline gap-x-1">
                             <span className="text-4xl font-bold tracking-light text-gray-900">
-                                $5.99
+                                $10
                             </span>
                             <span className="text-sm font-semibold leading-6 text-gray-600">
                                 / Month

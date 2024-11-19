@@ -38,7 +38,7 @@ export async function createCheckoutSesssion(userDetails: UserDetails) {
     payment_method_types: ["card"],
     line_items: [
       {
-        price: "price_1Q9oM3BAkR6ax9v4MIIe5Qpk",
+        price: "price_1QK4XSBAkR6ax9v42RscVRs5",
         quantity: 1,
       },
     ],

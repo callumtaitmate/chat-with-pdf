@@ -15,7 +15,7 @@ export default function UploadButton() {
     const handleAccount = () => {
         startTransition(async () => {
             fbq.event("SignUp_Intent");
-            router.push("/sign-up");
+            router.push("https://accounts.researchxcelerator.com/sign-up?redirect_url=https%3A%2F%2Fwww.researchxcelerator.com%2Fdashboard");
 
         })
     }

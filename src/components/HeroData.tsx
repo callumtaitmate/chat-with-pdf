@@ -35,7 +35,7 @@ export default function Component() {
             <main className="container mx-auto px-4 py-5 text-center">
 
                 <TopBar />
-                <Link href="/dashboard">
+                <Link href="/sign-up">
                     <div className="inline-flex items-center mt-10 bg-indigo-100 text-indigo-600 rounded-full px-4 py-1 text-sm mb-6">
 
                         <p className="font-semibold"> Your first 3 documents <span className="text-green-500 font-semibold animate-pulse">Free</span> </p> <ArrowRight className="w-4 h-4 ml-2" />
@@ -66,7 +66,7 @@ export default function Component() {
 
 
                 <div className="mt-10 px-8">
-                    <dl className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-muted-foreground sm:grid-cols-2 lg:mx-4 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16 justify-items-center">
+                  {/*  <dl className="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-muted-foreground sm:grid-cols-2 lg:mx-4 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16 justify-items-center">
                         {features.map((feature) => (
                             <div key={feature.description} className="flex justify-center rounded-sm flex-col">
                                 <dt className="mx-auto">
@@ -80,7 +80,7 @@ export default function Component() {
                                 <dd className="mt-1 text-muted-foreground">{feature.description}</dd>
                             </div>
                         ))}
-                    </dl>
+                    </dl> */}
                 </div>
                 <div className="flex justify-center space-x-2">
                     <Link href="/info/tos">
