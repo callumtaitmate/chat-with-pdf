@@ -16,6 +16,14 @@ const nextConfig = {
         "www.chat-with-pdf-roadmap.vercel.app",
       ],
     },
+    
+    serverComponentsExternalPackages: [
+      "puppeteer",
+      "puppeteer-extra",
+      "puppeteer-extra-plugin-stealth",
+    ],
+    serverMinification: false, // required by DEFER platform
+  
   },
   
   

@@ -1,7 +1,7 @@
 'use client';
 
 import { CheckCircleIcon, CircleArrowDown, HammerIcon, RocketIcon, SaveIcon, XIcon } from 'lucide-react'
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, type JSX } from 'react';
 import useUpload, { StatusText } from '@/hooks/useUpload';
 import { useDropzone } from 'react-dropzone'
 import { useRouter } from 'next/navigation';
